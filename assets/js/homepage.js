@@ -20,7 +20,7 @@ var formSubmitHandler = function(event) {
 var getUserRepos = function(user) {
     // format the github api url
     var apiUrl = "https://api.github.com/users/" + user + "/repos";
-
+}
     
 
 var displayRepos = function(repos, searchTerm) {
@@ -82,5 +82,4 @@ var displayRepos = function(repos, searchTerm) {
         repoContainerEl.appendChild(repoEl);
     }
 };
-}
 userFormEl.addEventListener("submit", formSubmitHandler);
